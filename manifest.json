@@ -1,0 +1,74 @@
+{
+  "manifest_version": 3,
+  "name": "YT Studio Tools - Enhance YouTube Studio",
+  "description": "Transform YouTube Studio with tools built for creators.",
+  "version": "0.1",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "action": {
+    "default_title": "YT Studio Tools",
+    "default_icon": {
+      "16": "images/icon.png",
+      "32": "images/icon.png",
+      "48": "images/icon.png",
+      "128": "images/icon.png"
+    }
+  },
+  "icons": {
+    "16": "images/icon.png",
+    "32": "images/icon.png",
+    "48": "images/icon.png",
+    "128": "images/icon.png"
+  },
+  "host_permissions": [
+    "https://studio.youtube.com/*",
+    "https://www.youtube.com/*",
+    "https://backend.viralhits.io/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://studio.youtube.com/*",
+        "https://www.youtube.com/*"
+      ],
+      "js": ["content.js"],
+      "css": ["ui.css", "modal.css", "styles.css"],
+      "run_at": "document_start",
+      "all_frames": true
+    },
+    {
+      "matches": ["https://studio.youtube.com/*"],
+      "js": ["monitor-injector.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "inject.js",
+        "dynamicRequest.js",
+        "intro/hello.html",
+        "intro/hello.css",
+        "intro/hello.js",
+        "ui.js",
+        "uiChannel.js",
+        "modal.css",
+        "ui.css",
+        "images/logo.svg",
+        "uiMusic.js",
+        "chartHover.js",
+        "dashboardMonitor.js"
+      ],
+      "matches": [
+        "https://studio.youtube.com/*",
+        "https://www.youtube.com/*"
+      ]
+    }
+  ]
+}

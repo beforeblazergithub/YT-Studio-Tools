@@ -1,0 +1,231 @@
+@import url("https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css");
+  @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap");
+  
+/* style the container when our script is active */
+.advanced-analytics-container.ytstudiotools-host {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+}
+
+#ytstudiotools-wrapper {
+  display: inline-flex;           /* shrink‑to‑fit */
+  align-items: center;            /* vertical centering */
+  background: rgba(255,255,255,0.1);
+  padding: 0 15px;
+  height: 36px;
+  border-radius: 18px;
+  line-height: normal;            /* reset any inherited line‑height */
+  cursor: pointer;
+  transition: .2s ease all;
+  /*box-shadow: inset 0 0 8px rgba(241, 241, 241, 0.1);*/
+}
+
+#ytstudiotools-wrapper:hover {
+    background: rgba(235, 235, 235, 0.1);
+    transition: .2s ease all;
+}
+
+/*blackout
+
+#ytstudiotools-wrapper {
+  display: inline-flex;           
+  align-items: center;         
+  background: rgba(26, 26, 26, 0.85);
+  padding: 0 15px;
+  height: 36px;
+  border-radius: 18px;
+  line-height: normal;           
+  cursor: pointer;
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.631);
+}
+
+*/
+
+/* ── Logo ── */
+#ytstudiotools-wrapper .thh-logo {
+  display: block;                 /* avoid inline‐image quirks */
+  width: auto;
+  height: 29px;                 /* never shrink */
+  margin-right: 0px;      
+  margin-left: -7px;        /* space to label */
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+/* ── Label ── */
+#ytstudiotools-wrapper .ytstudiotools-label {
+    margin: 0;                      /* reset defaults */
+    font-family: "Inter","Poppins",sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    line-height: normal;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+/* ── Checkbox ── */
+#ytstudiotools-switch {
+  width: 16px;
+  height: 16px;
+  margin: 0 0 0 8px;              /* 8px gap on left */
+  flex-shrink: 0;                 /* never shrink */
+  accent-color: #ff2020;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+#ytstudiotools-wrapper .ytstudiotools-status {
+    margin: 0;                      /* reset defaults */
+    font-family: "Inter","Poppins",sans-serif;
+    font-size: 15px;
+    color: #23dd15;
+    line-height: normal;    
+    font-weight: 600;
+    margin-left: 6px;
+    user-select: none;
+  -webkit-user-drag: none;
+}
+
+/* ── Custom Toggle Switch ── */
+.toggle-switch {
+  position: relative;
+  width: 40px;
+  height: 20px;
+  flex-shrink: 0;
+  margin-left: 8px;
+}
+
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle-switch .toggle-label {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: #353535;
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.449);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all .25s ease;
+}
+
+.toggle-switch .toggle-label::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  box-shadow: inset 0 0 4px rgba(140, 140, 140, 0.449);
+  border-radius: 50%;
+  transition: all .25s ease;
+}
+
+/* Checked state */
+.toggle-switch input:checked + .toggle-label {
+  background: #23dd15;
+}
+
+.toggle-switch input:checked + .toggle-label::before {
+  transform: translateX(20px);
+}
+
+/* target the two shapes by their new classes */
+.thh-logo .primary   { fill: #fff;      /* main color */ }
+.thh-logo .secondary { fill: #ff0000;   /* red */        }
+
+.ns-spinner {
+  display: inline-block;
+  width: 16px; height: 16px;
+  border: 2px solid rgba(255,255,255,0.3);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: ns-spin 0.7s linear infinite;
+  vertical-align: middle;
+}
+@keyframes ns-spin { to { transform: rotate(360deg); } }
+
+/* --- Native Discord button (avoids YouTube re‐renders) --- */
+/* --- Discord button flex alignment & vertical centering --- */
+#join-discord-button {
+  display: inline-flex !important;         /* make icon+text a flex row */
+  align-items: center !important;          /* vertical center inside the button */
+  justify-content: center !important;      /* horizontal center */
+  gap: 6px !important;                     /* space between icon and label */
+
+  /* match height & vertical position of the other header icons */
+  height: 32px !important;
+  line-height: 1 !important;
+  padding: 0 12px !important;
+  margin-right: 8px !important;
+  vertical-align: middle !important;       /* align baseline with siblings */
+  align-self: center !important;           /* if parent is flex, center it */
+
+  background-color: #5865F2 !important;
+  color: #fff !important;
+  border: none !important;
+  border-radius: 8px !important;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  cursor: pointer !important;
+  font-family: "Inter","Poppins",sans-serif;
+  box-shadow: inset 0 0 4px rgba(0,0,0,0.2) !important;
+  transition: filter 0.2s ease !important;
+}
+
+#join-discord-button:hover {
+  filter: brightness(1.1) !important;
+}
+
+#join-discord-button .fa-discord {
+  font-size: 1.1em;
+  /* centering is handled by the parent’s align-items */
+}
+
+
+html:not([dark]) .ns-spinner {
+  border: 2px solid rgba(0,0,0,0.2);
+  border-top-color: #444;
+}
+
+html:not([dark]) #ytstudiotools-wrapper {
+  background: #F2F2F2;
+  /*box-shadow: inset 0 0 8px rgba(198, 198, 198, 0.6);*/
+}
+
+html:not([dark]) #ytstudiotools-wrapper .ytstudiotools-label {
+  color: #222;
+}
+
+html:not([dark]) #ytstudiotools-switch {
+  /* keeps the same accent-color, or change if you like: */
+  accent-color: #ff2020;
+}
+
+html:not([dark]) #ytstudiotools-wrapper img.thh-logo {
+  filter: brightness(0) saturate(100%);
+}
+
+html:not([dark]) #ytstudiotools-wrapper .ytstudiotools-status {
+    color: #19a210;
+}
+
+html:not([dark]) .toggle-switch .toggle-label {
+    background: #696969;
+}
+
+html:not([dark]) .toggle-switch input:checked + .toggle-label {
+    background: #23dd15;
+}
+
+html:not([dark]) .thh-logo .primary   { fill: #222;      /* main color */ }
+
+html:not([dark]) .thh-logo .secondary { fill: #ff0000;   /* red */        }
