@@ -1,34 +1,47 @@
-# CanvasHack (Public Release)
+# Yt Studio Tools Chrome Extension (Official Release by BlazerHM)
 
-> Originally developed and maintained by BlazerHM. This is the official and original public release of the CanvasHack Chrome extension.
+> This is the only authorized release of the Yt Studio Tools Chrome extension. All rights are fully reserved by BlazerHM.
 
-CanvasHack is a Chrome extension designed to enhance the online learning experience on Canvas by providing extra tools and visual improvements. This version has been released for public use, with permission granted under the terms of the MIT License.
+Yt Studio Tools is a Chrome extension created to improve the online testing and assignment experience on Canvas by offering a range of helpful utilities. This repository is the **only official and legitimate version** released and maintained by the original creator, BlazerHM.
 
-## 🚨 Legal Notice
+## 🔒 Legal Ownership
 
-This repository represents the **original codebase** written by the primary creator, BlazerHM. Any unauthorized reuse or reupload of this code, in part or in whole, outside of the license terms may result in a **DMCA takedown** or **legal action**.
+This extension was built entirely by **BlazerHM**, and **no other individuals or former collaborators have rights to use, modify, upload, republish, or distribute any part of it.**
 
-## 💡 Features
+Any attempt to:
 
-- Custom layout and design improvements
-- Answer-saving features
-- Tab switch detection prevention
-- Lightweight and efficient
+- Publish this extension to the Chrome Web Store
+- Modify and use this code
+- Claim ownership or co-ownership
+- Host it via developer platforms like Chrome Web Store, Edge Add-ons, or similar
 
-## 📦 Installation
+…will result in an **immediate DMCA takedown and legal action**.
 
-This is a developer release.
+A former co-founder has been removed and is **no longer authorized** to use or distribute any part of this project.
 
-1. Download or clone the repo.
-2. Go to `chrome://extensions` in Chrome.
-3. Enable Developer Mode.
-4. Click “Load unpacked” and select this folder.
+## 🚫 License Terms
 
-## 📜 License
+This project is **NOT open-source.**  
+All rights are strictly reserved by BlazerHM.
 
-This project is licensed under the [MIT License](LICENSE).
+You **may NOT**:
+- Copy, modify, or share this code
+- Publish it in any extension store
+- Use it in private or public form
+- Rebrand or reuse any part of it
 
-## ✉️ Contact
+Only users granted written permission by BlazerHM are allowed to use or deploy this project in any form.
 
-Questions, inquiries, feature requests, or want to help with the project?  
-Email: beforeblazer@gmail.com
+## ✅ Official Source
+
+If the extension is not from:
+**https://github.com/beforeblazergithub/YT-Studio-Tools**
+or:
+**https://chromewebstore.google.com/detail/plnjnpmjoffhonjgfjomjgnbjmgklnma**
+
+…it is **unauthorized and subject to takedown.**
+
+## 📩 Contact
+
+For permissions, or feature requests please contact:
+📧 beforeblazer@gmail.com
